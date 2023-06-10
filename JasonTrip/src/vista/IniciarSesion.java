@@ -3,11 +3,8 @@ package vista;
 import recursos.LookVentana.PanelCustom;
 import clases.Usuario;
 import excepciones.ErrExtra;
-import excepciones.ErrInsert;
 import excepciones.ErrSelect;
 import java.awt.Color;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import modelo.DAO;
 import recursos.LookVentana.EventLogin;
@@ -159,7 +156,7 @@ public class IniciarSesion extends PanelCustom {
             Usuario usu = dao.iniciarSesion(txtUsuario.getText(), txtContrasenia.getText());
 
             if (usu != null) {
-                VInicio vInicio = new VInicio(vMain, true, dao, usu);
+                Inicio vInicio = new Inicio(vMain, true, dao, usu);
                 vMain.setOpacity(0);
                 vInicio.setVisible(true);
 

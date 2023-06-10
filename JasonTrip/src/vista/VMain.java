@@ -63,7 +63,7 @@ public class VMain extends javax.swing.JFrame {
         fondo = new recursos.LookVentana.RoundPanel();
         barraTareas = new recursos.LookVentana.RoundPanel();
         btnSalir = new javax.swing.JButton();
-        loginAndRegister1 = new vista.PIni_Regi();
+        loginAndRegister1 = new vista.Registrar_IniciarSesion();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -141,6 +141,6 @@ public class VMain extends javax.swing.JFrame {
     private recursos.LookVentana.RoundPanel barraTareas;
     private javax.swing.JButton btnSalir;
     private recursos.LookVentana.RoundPanel fondo;
-    private vista.PIni_Regi loginAndRegister1;
+    private vista.Registrar_IniciarSesion loginAndRegister1;
     // End of variables declaration//GEN-END:variables
 }

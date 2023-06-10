@@ -5,6 +5,7 @@
 package clases;
 
 import java.util.List;
+import vista.Detalles_Lista;
 
 /**
  * Esta clase guarda las listas de un usuario. Las listas son las cosas que

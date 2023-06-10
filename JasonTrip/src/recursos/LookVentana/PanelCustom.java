@@ -7,7 +7,7 @@ import java.awt.RenderingHints;
 import java.awt.geom.Rectangle2D;
 import java.awt.geom.RoundRectangle2D;
 import javax.swing.JComponent;
-import vista.PIni_Regi;
+import vista.Registrar_IniciarSesion;
 
 public class PanelCustom extends JComponent {
 
@@ -39,7 +39,7 @@ public class PanelCustom extends JComponent {
         super.paint(grphcs);
         Graphics2D g2 = (Graphics2D) grphcs.create();
         g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha * 0.8f));
-        g2.setColor(PIni_Regi.mainColor);
+        g2.setColor(Registrar_IniciarSesion.mainColor);
         g2.fill(new Rectangle2D.Double(0, 0, getWidth(), getHeight()));
         g2.dispose();
     }

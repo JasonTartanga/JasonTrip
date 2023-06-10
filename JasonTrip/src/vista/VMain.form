@@ -111,7 +111,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="vista.PIni_Regi" name="loginAndRegister1">
+        <Component class="vista.Registrar_IniciarSesion" name="loginAndRegister1">
         </Component>
       </SubComponents>
     </Container>

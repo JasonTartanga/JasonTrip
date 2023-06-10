@@ -1,9 +1,12 @@
 package modelo;
 
+import clases.Lista;
 import clases.Usuario;
 import excepciones.ErrExtra;
 import excepciones.ErrInsert;
 import excepciones.ErrSelect;
+import excepciones.ErrUpdate;
+import java.util.List;
 
 /**
  * Esta interfaz es la logica de negocio de la aplicacion
@@ -24,7 +27,11 @@ public interface DAO {
      */
     public void registrarUsuario(Usuario usu) throws ErrExtra, ErrInsert;
 
+    public void insertarLista(Lista list) throws ErrExtra, ErrInsert;
+
     //********** UPDATE ***********/
+    public void editarTituloLista(String id_lista, String titulo) throws ErrExtra, ErrUpdate;
+
     //********** DELETE ***********/
     //********** SELECT ***********/
     /**
@@ -51,4 +58,9 @@ public interface DAO {
      * buscar datos.
      */
     public String generarIdUsuario() throws ErrExtra, ErrSelect;
+
+    public String generarIdLista() throws ErrExtra, ErrSelect;
+
+    public List<Lista> listarListasUsuario(String id_usuario) throws ErrExtra, ErrSelect;
+
 }

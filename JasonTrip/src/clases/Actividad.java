@@ -47,6 +47,11 @@ public class Actividad {
      */
     private LocalDate dia;
 
+    /**
+     * Es el numero de veces que esta tabuladoa la derecha la actividad .
+     */
+    private int tabulacion;
+
     //********** METODOS **********/
     /**
      * Este metodo devuelve toda la informacion de una actividad.
@@ -55,7 +60,7 @@ public class Actividad {
      */
     @Override
     public String toString() {
-        return "Actividad{" + "id_actividad=" + id_actividad + ", titulo=" + titulo + ", descripcion=" + descripcion + ", ubicacion=" + ubicacion + ", fotos=" + fotos + ", dia=" + dia + '}';
+        return "Actividad{" + "id_actividad=" + id_actividad + ", titulo=" + titulo + ", descripcion=" + descripcion + ", ubicacion=" + ubicacion + ", fotos=" + fotos + ", dia=" + dia + ", tabulacion=" + tabulacion + '}';
     }
 
     //********** GETTERS && SETTERS **********/
@@ -105,6 +110,14 @@ public class Actividad {
 
     public void setDia(LocalDate dia) {
         this.dia = dia;
+    }
+
+    public int getTabulacion() {
+        return tabulacion;
+    }
+
+    public void setTabulacion(int tabulacion) {
+        this.tabulacion = tabulacion;
     }
 
 }
